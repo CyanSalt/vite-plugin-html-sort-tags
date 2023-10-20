@@ -53,7 +53,11 @@ const defaultOrder = (node: HTMLElement) => {
   return 3
 }
 
-const htmlSortTags = ({ order = defaultOrder } = {}): Plugin => {
+export interface Options {
+  order?: (node: HTMLElement) => number,
+}
+
+const htmlSortTags = ({ order = defaultOrder }: Options = {}): Plugin => {
   return {
     name: 'vite-plugin-html-sort-tags',
     enforce: 'post',
