@@ -14,6 +14,8 @@ Handling the order of tags in HTML correctly can sometimes help page performance
 
 The plugin has a default configuration that sorts the tags in the head in what is usually the best order.
 
+This plugin will **NOT** generate resource hints for you. Refer to [`vite-plugin-prefetch-chunk`](https://github.com/CyanSalt/vite-plugin-prefetch-chunk) and [`vite-plugin-auto-preload`](https://github.com/CyanSalt/vite-plugin-auto-preload) if necessary.
+
 ## Installation
 
 ```shell
